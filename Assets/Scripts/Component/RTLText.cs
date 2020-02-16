@@ -33,7 +33,7 @@ namespace UIPersian
                 string baseText = base.text;
                 
                 TextGenerationSettings settings = GetGenerationSettings(rectTransform.rect.size);
-                settings.richText = true;
+                settings.richText = supportRichText;
                 cachedTextGenerator.Populate(baseText, settings);
                 // Make list of lines
                 List<UILineInfo> lines = cachedTextGenerator.lines as List<UILineInfo>;
@@ -61,7 +61,7 @@ namespace UIPersian
                         //if (resizeTextForBestFit) linedText += '\n';
                     }
                 }
-                return linedText.ToPersianWithMeta();
+                return supportRichText ? linedText.ToPersianWithMeta() : linedText.ToPersian();
             }
             set { base.text = value; }
         }
