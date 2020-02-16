@@ -19,6 +19,11 @@ public class ExamplePersianRichTextLoader : MonoBehaviour
             String persianText = json["value"].ToString();
             RtlText.text = persianText;
         }
+        
+//        Char NonBrakingSpace = (char)0x00a0;
+//        char x = (char)0x200d;
+//        textBox1.Text = "می@شود ".Replace('@', NonBrakingSpace);
+//        textBox1.Text += string.Format("می{0}رود", x);
     }
     
 }
