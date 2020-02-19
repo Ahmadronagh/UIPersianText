@@ -16,10 +16,10 @@ namespace UIPersian.Utils
         public static string ToPersian(this string text)
         {
             //ﺉﻚﻙﯤ
-            text = text.Replace('ی', 'ﻱ');
-            //str = str.Replace( 'ی','ﺉ');
-            text = text.Replace('ک', 'ﻙ');
-            //str = str.Replace('ﻚ', 'ک');
+            //text = text.Replace('ی', 'ﻱ');
+            //text = text.Replace( 'ی','ﺉ');
+            //text = text.Replace('ک', 'ﻙ');
+            //text = text.Replace('ﻚ', 'ک');
             text = ArabicSupport.ArabicFixer.Fix(text,true,false);
             text = text.Replace('ﺃ', 'آ');
             return text;
