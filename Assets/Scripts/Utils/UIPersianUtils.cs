@@ -35,6 +35,10 @@ namespace UIPersian.Utils
         {
             if (String.IsNullOrEmpty(text))
                 return text;
+            //Check Is Text Full English Char
+            if (Regex.IsMatch(text, "^[a-zA-Z0-9. -_?]*$")   )
+                return text;
+            
             string textWithMeta = "";
             string[] output = Regex.Split(text, "(?=<)|(?<=>)");
 
@@ -59,6 +63,8 @@ namespace UIPersian.Utils
                     endTagCount += 1;
                     int index = onlyperisan.Length - startIndex;
                     var startTag = FindStartTag(output, endTagCount);
+                    if (index < 0)
+                        index = 0;
                     onlyperisan = onlyperisan.Insert(index, startTag);
                     startIndex += startTag.Length;
                 }
@@ -66,6 +72,8 @@ namespace UIPersian.Utils
                 {
                     startTagCount += 1;
                     int index = onlyperisan.Length - startIndex;
+                    if (index < 0)
+                        index = 0;
                     var endTag = FindEndTag(output, startTagCount);
                     onlyperisan = onlyperisan.Insert(index, endTag);
                     startIndex += endTag.Length;

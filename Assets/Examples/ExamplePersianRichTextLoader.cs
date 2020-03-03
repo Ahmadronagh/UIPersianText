@@ -10,6 +10,10 @@ public class ExamplePersianRichTextLoader : MonoBehaviour
 {
     public RTLText RtlText;
     public Text SampleText;
+    public Text SampleText1;
+    public Text SampleText2;
+    public Text SampleText3;
+    public Text SampleText4;
     
     void Start()
     {
@@ -19,7 +23,11 @@ public class ExamplePersianRichTextLoader : MonoBehaviour
 
 
 
-        SampleText.text = json["valuemetaa"].ToString().ToPersianWithMeta();
+        SampleText.text = json["value"].ToString().ToPersianWithMeta();
+        SampleText1.text = json["value1"].ToString().ToPersianWithMeta();
+        SampleText2.text = json["value2"].ToString().ToPersianWithMeta();
+        SampleText3.text = json["value5"].ToString().ToPersianWithMeta();
+        SampleText4.text = json["value4"].ToString().ToPersianWithMeta();
 //        if (RtlText != null)
 //        {
 //            String persianText = json["value"].ToString();

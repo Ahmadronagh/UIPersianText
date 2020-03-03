@@ -1,5 +1,11 @@
 {
 	"value": "به حالت خفن تغییر میدی؟",
-	"valuemeta": "به <color=#ff0000ff>حالت خفن</color> تغییر میدی؟",
-	"valuemetaa": "به <color=#ff0000ff>حالت عادی</color> تغییر میدی؟"
+	"value1": "به <color=#ff0000ff>حالت خفن</color> تغییر میدی؟",
+	"value2": "شانسی دوست داری <color=#00c6ffff>200</color>",
+	"value3": "سواری میخوای؟ <color=#ffff00ff>15</color>",
+	"value4": "SMG M2 <color=#ffff00ff>28</color>",
+	"value5": " <color=#ff51e3c2> سواری میخوای؟</color> <color=#ffff00ff>15</color>",
+	"value6": "سواری میخوای؟ <color=#ffff00ff>15</color>",
+	
+	
 }
