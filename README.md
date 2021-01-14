@@ -1,16 +1,29 @@
-# EGGA
-
 UIPersianText:
 Unity Game Engine RTL Support With Rich Text Tag
 
 This project used [ArabicSupprt for Unity](https://www.assetstore.unity3d.com/en/#!/content/2674) And [UPersian](https://github.com/ElectroGryphon/EGGA/tree/master/UPersian) For Unity Asset.
 
+Soul Knight Used this library to fix persian and arabic text
+
+Example Use:
+
+![perisan text](./img/text1.png)
+
+![perisan text](./img/text2.jpg)
+
 ## Features:
 
-Supports Arabic and Persian for now. (~~Waiting for @Konash to opensource ArabicSupport plugin~~).
+this is an example how to use this lib :
+```
+    "text content".ToPersianWithMeta()
+```
+
+Or you can use the text component :
 
 New GUI Items(Creation MenuItem > UI Persian >) : 
 - RTL Text
+
+Supports Arabic and Persian for now.
 <!--
 ### Runtime RTL Input Field
 
